@@ -43,7 +43,7 @@ class SharedDrawer extends StatelessWidget {
               // Then close the drawer
               Navigator.of(context).pop();
               // print(Navigator.of(context).);
-              // Navigator.popUntil(context, ModalRoute.withName('/login'));
+              // Navigator.of(context).popUntil(Navigator.of(context).canPop()? ModalRoute.withName('/login'));
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
